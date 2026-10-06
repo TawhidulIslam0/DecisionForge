@@ -1,0 +1,27 @@
+{
+  "name": "decisionforge-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "prisma": "prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "cors": "2.8.5",
+    "dotenv": "16.6.1",
+    "express": "5.1.0",
+    "openai": "6.7.0",
+    "zod": "4.1.12",
+    "prisma": "6.19.3"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.5",
+    "@types/node": "24.8.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  }
+}

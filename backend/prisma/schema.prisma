@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Decision {
+  id        String   @id @default(cuid())
+  title     String
+  question  String
+  input     Json
+  result    Json
+  createdAt DateTime @default(now())
+}
